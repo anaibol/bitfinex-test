@@ -1,0 +1,86 @@
+html, body, main, :global(#root) {
+  width: 100%;
+  height: 100%;
+  background-color: #2C3940;
+  color: white;
+}
+
+:global(#root) > div, section {
+  flex: 1;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+}
+
+main,
+footer,
+article,
+section,
+aside,
+details,
+summary,
+form,
+fieldset {
+  // margin: 0 auto;
+  // margin-bottom: $md-pad;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+span, nav, header {
+  display: flex;
+  flex-direction: row;
+}
+
+header {
+  margin: 0 auto;
+  margin-bottom: $md-pad;
+  width: 100%;
+}
+
+// main {
+  // padding: 0 $md-pad $md-pad;
+// }
+
+footer {
+  border-top: $border;
+  clear: both;
+  float: left;
+  max-width: 100%;
+  padding: $md-pad 0;
+  text-align: center;
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+hr {
+  border-top: $border;
+  display: block;
+  margin-bottom: $md-pad;
+  width: 100%;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: baseline;
+}
+
+@media screen and (max-width: $small-breakpoint) {
+  article,
+  section,
+  aside {
+    clear: both;
+    display: block;
+    max-width: 100%;
+  }
+
+  img {
+    margin-right: $md-pad;
+  }
+}

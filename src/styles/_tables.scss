@@ -1,0 +1,32 @@
+table {
+  margin-bottom: $sm-pad;
+}
+
+caption {
+  padding: $sm-pad 0;
+}
+
+thead {
+  font-weight: bold;
+}
+
+tr {
+  margin-bottom: $sm-pad;
+}
+
+th,
+td {
+  padding: $sm-pad;
+  vertical-align: inherit;
+}
+
+tfoot tr {
+  text-align: left;
+}
+
+tfoot td {
+  color: $secondary;
+  font-size: $sm-pad;
+  font-style: italic;
+  padding: $sm-pad $xs-pad;
+}
